@@ -1,0 +1,37 @@
+{
+  "name": "ExpressStarter",
+  "description": "Text Mix IT",
+  "version": "0.0.1",
+  "homepage": "http://expressstarter.azurewebsites.net/",
+  "author": {
+    "name": "Ouarzy",
+    "email": "ouarzy@free.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ouarzy/ExpressStarter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ouarzy/ExpressStarter/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://expressstarter.azurewebsites.net//blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/ExpressStarter",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.4"
+  },
+  "keywords": []
+}

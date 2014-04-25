@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-template-jasmine-requiredjs-cli' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-template-jasmine-requiredjs-cli', null ]
+7 verbose cache add name=undefined spec="grunt-template-jasmine-requiredjs-cli" args=["grunt-template-jasmine-requiredjs-cli",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-template-jasmine-requiredjs-cli',
+8 verbose parsed url   path: 'grunt-template-jasmine-requiredjs-cli',
+8 verbose parsed url   href: 'grunt-template-jasmine-requiredjs-cli' }
+9 silly lockFile a06302d5--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli
+10 verbose lock grunt-template-jasmine-requiredjs-cli C:\Users\emi\AppData\Roaming\npm-cache\a06302d5--template-jasmine-requiredjs-cli.lock
+11 silly lockFile a06302d5--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli
+12 silly lockFile a06302d5--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli
+13 verbose addNamed [ 'grunt-template-jasmine-requiredjs-cli', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile daacf3de--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli@
+16 verbose lock grunt-template-jasmine-requiredjs-cli@ C:\Users\emi\AppData\Roaming\npm-cache\daacf3de--template-jasmine-requiredjs-cli.lock
+17 silly addNameRange { name: 'grunt-template-jasmine-requiredjs-cli',
+17 silly addNameRange   range: '*',
+17 silly addNameRange   hasData: false }
+18 verbose url raw grunt-template-jasmine-requiredjs-cli
+19 verbose url resolving [ 'https://registry.npmjs.org/',
+19 verbose url resolving   './grunt-template-jasmine-requiredjs-cli' ]
+20 verbose url resolved https://registry.npmjs.org/grunt-template-jasmine-requiredjs-cli
+21 info trying registry request attempt 1 at 10:09:59
+22 http GET https://registry.npmjs.org/grunt-template-jasmine-requiredjs-cli
+23 http 404 https://registry.npmjs.org/grunt-template-jasmine-requiredjs-cli
+24 silly registry.get cb [ 404,
+24 silly registry.get   { date: 'Fri, 25 Apr 2014 08:09:59 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-lcy1135-LCY',
+24 silly registry.get     'x-cache': 'MISS, MISS',
+24 silly registry.get     'x-cache-hits': '0, 0',
+24 silly registry.get     'x-timer': 'S1398413398.845691442,VS0,VS41,VE135,VE174',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly lockFile daacf3de--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli@
+26 silly lockFile daacf3de--template-jasmine-requiredjs-cli grunt-template-jasmine-requiredjs-cli@
+27 error 404 'grunt-template-jasmine-requiredjs-cli' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404 It was specified as a dependency of 'ExpressStarter'
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Windows_NT 6.2.9200
+29 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-template-jasmine-requiredjs-cli"
+30 error cwd C:\Users\emi\Documents\GitHub\ExpressStarter\GruntTest
+31 error node -v v0.10.26
+32 error npm -v 1.4.3
+33 error code E404
+34 verbose exit [ 1, true ]
