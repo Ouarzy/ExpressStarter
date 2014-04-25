@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="3"  lines-covered="1"  line-rate="0.3333"  branches-valid="0"  branches-covered="0"  branch-rate="1"  timestamp="1398420439964" complexity="0" version="0.1">
+<sources>
+	<source>C:\Users\emi\Documents\GitHub\ExpressStarter\GruntTest</source>
+</sources>
+<packages>
+	<package name="lib"  line-rate="0.3333"  branch-rate="1" >
+	<classes>
+		<class name="Calculator.js"  filename="lib\Calculator.js"  line-rate="0.3333"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="0"  signature="()V" >
+				<lines><line number="1"  hits="0" /></lines>
+			</method>
+			<method name="(anonymous_2)"  hits="0"  signature="()V" >
+				<lines><line number="2"  hits="0" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="1"  hits="1"  branch="false" />
+			<line number="2"  hits="0"  branch="false" />
+			<line number="3"  hits="0"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+</packages>
+</coverage>

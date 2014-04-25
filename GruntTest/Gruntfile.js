@@ -6,28 +6,44 @@ module.exports = function (grunt) {
         meta: {
             // Specify where our test files are.  Once we get all the tests switched over we can use 'test/js/**/*.spec.js' to automatically load all tests.
             specs: ['test/*.spec.js'],
+            src: ['lib/*.js'],
+            bin: {
+                coverage: 'bin/coverage'
+            }
         },
         // Our jasmine task, with a sub-task called 'test'.
         jasmine: {
             options: {
                 specs: '<%= meta.specs %>',
-                templateOptions: {
-                    requireConfig: {
-                        baseUrl: 'js/src/'
-                    }
-                }
             },
             test: {
                 // Run with the default settings
             },
             coverage: {
+                src: '<%= meta.src %>',
                 options: {
+                    specs: '<%= meta.specs %>',
+                    template: require('grunt-template-jasmine-istanbul'),
                     templateOptions: {
-                        requireConfig: {
-                            baseUrl: '<%= meta.bin.coverage %>/js/src/'
-                        }
-                    },
-                    helpers: 'js/coverage_helper.js'
+                        coverage: '<%= meta.bin.coverage %>/coverage.json',
+                        report: [
+                            {
+                                type: 'html',
+                                options: {
+                                    dir: '<%= meta.bin.coverage %>/html'
+                                }
+                            },
+                            {
+                                type: 'cobertura',
+                                options: {
+                                    dir: '<%= meta.bin.coverage %>/cobertura'
+                                }
+                            },
+                            {
+                                type: 'text-summary'
+                            }
+                        ]
+                    }
                 }
             }
         },
@@ -68,7 +84,7 @@ module.exports = function (grunt) {
                     keepalive: false
                 }
             }
-        }
+        },
     });
 
     grunt.loadNpmTasks('grunt-istanbul');

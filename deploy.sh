@@ -91,7 +91,7 @@ selectNodeVersion () {
   else
     NPM_CMD=npm
     NODE_EXE=node
-  fi
+  fiexitWithMessageOnError
 }
 
 ##################################################################################################################################
@@ -115,14 +115,14 @@ fi
 if [ -e "$DEPLOYMENT_SOURCE/GruntTest/Gruntfile.js" ]; then  
   eval $NPM_CMD install grunt-cli  
   exitWithMessageOnError "installing grunt failed"  
-  ./node_modules/.bin/grunt --no-color clean common dist  
+  ./node_modules/.bin/grunt --no-color
   exitWithMessageOnError "grunt failed"  
 fi  
 
 # 4. KuduSync
 if [[ "$IN_PLACE_DEPLOYMENT" -ne "1" ]]; then
   "$KUDU_SYNC_CMD" -v 50 -f "$DEPLOYMENT_SOURCE" -t "$DEPLOYMENT_TARGET" -n "$NEXT_MANIFEST_PATH" -p "$PREVIOUS_MANIFEST_PATH" -i ".git;.hg;.deployment;deploy.sh"
-  exitWithMessageOnError "Kudu Sync failed"
+   "Kudu Sync failed"
 fi
 
 ##################################################################################################################################
