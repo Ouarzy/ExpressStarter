@@ -51,6 +51,8 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
  */
 jasmine.CATCH_EXCEPTIONS = true;
 
+
+
 jasmine.getGlobal = function() {
   function getGlobal() {
     return this;
@@ -2598,3 +2600,13 @@ jasmine.version_= {
   "build": 1,
   "revision": 1354556913
 };
+
+var ConsoleReporter = jasmineRequire.ConsoleReporter();
+var options = {
+    timer: new jasmine.Timer,
+    print: function () {
+        console.log.apply(console, arguments)
+    }
+};
+consoleReporter = new ConsoleReporter(options); // initialize ConsoleReporter
+jasmine.getEnv().addReporter(consoleReporter); //add reporter to execution environment

@@ -91,7 +91,7 @@ selectNodeVersion () {
   else
     NPM_CMD=npm
     NODE_EXE=node
-  fiexitWithMessageOnError
+  fi
 }
 
 ##################################################################################################################################
@@ -136,3 +136,4 @@ if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
 fi
 
 echo "Finished successfully."
+
