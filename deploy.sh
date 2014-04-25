@@ -112,7 +112,7 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
 fi
 
 # 3. Run grunt  
-if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then  
+if [ -e "$DEPLOYMENT_SOURCE/GruntTest/Gruntfile.js" ]; then  
   eval $NPM_CMD install grunt-cli  
   exitWithMessageOnError "installing grunt failed"  
   ./node_modules/.bin/grunt --no-color clean common dist  
